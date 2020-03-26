@@ -42,5 +42,8 @@ xlabel('Frecuencia')
 ylabel('|H(w)|')
 figure
 plot(tiempo_grafica,Resultado);
+title('Multiplicacion de señal envolvente y senoidales');
+xlabel('Tiempo, s') 
+ylabel('Amplitud')
 figure
-plot(abs(RESULTADO)),xlim([0 4000]);
+plot(abs(RESULTADO)),xlim([0 2000]);

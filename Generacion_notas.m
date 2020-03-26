@@ -106,92 +106,121 @@ x_sound_SI_2=audioplayer(Resultado_SI,Fs);
 
 %play(x_sound_SI);%reproduccion de sonido
 %pause(3)
+FDO=fft(Resultado_DO);
+FRE=fft(Resultado_RE);
+FMI=fft(Resultado_MI);
+FFA=fft(Resultado_FA);
+FSOL=fft(Resultado_SOL);
+FLA=fft(Resultado_LA);
+FSI=fft(Resultado_SI);
+plot(abs(FDO)),xlim([0 4000]);
+title('fft Do');
+xlabel('Frecuencia') 
+ylabel('|H(w)|')
+figure
 
-
-
-play(x_sound_DO);
-pause (.5)
-play(x_sound_DO_2);
-pause (.5)
-play(x_sound_SOL);
-pause (.5)
-play(x_sound_SOL_2);
-pause (.5)
-play(x_sound_LA);
-pause (.5)
-play(x_sound_LA_2);
-pause (.5)
-play(x_sound_SOL_3);
-pause (2.5)
-play(x_sound_FA);
-pause (.5)
-play(x_sound_FA_2);
-pause (.5)
-play(x_sound_MI);
-pause (.5)
-play(x_sound_MI_2);
-pause (.5)
-play(x_sound_RE);
-pause (.5)
-play(x_sound_RE_2);
-pause (.5)
-play(x_sound_DO);
-pause (3)
-
-play(x_sound_SOL);
-pause (.5)
-play(x_sound_SOL_2);
-pause (.5)
-play(x_sound_FA);
-pause (.5)
-play(x_sound_FA_2);
-pause (.5)
-play(x_sound_MI);
-pause (.5)
-play(x_sound_MI_2);
-pause (.5)
-play(x_sound_RE);
-pause (2.5)
-play(x_sound_SOL);
-pause (.5)
-play(x_sound_SOL_2);
-pause (.5)
-play(x_sound_FA);
-pause (.5)
-play(x_sound_FA_2);
-pause (.5)
-play(x_sound_MI);
-pause (.5)
-play(x_sound_MI_2);
-pause (.5)
-play(x_sound_RE);
-pause (3)
-
-play(x_sound_DO);
-pause (.5)
-play(x_sound_DO_2);
-pause (.5)
-play(x_sound_SOL);
-pause (.5)
-play(x_sound_SOL_2);
-pause (.5)
-play(x_sound_LA);
-pause (.5)
-play(x_sound_LA_2);
-pause (.5)
-play(x_sound_SOL_3);
-pause (2.5)
-play(x_sound_FA);
-pause (.5)
-play(x_sound_FA_2);
-pause (.5)
-play(x_sound_MI);
-pause (.5)
-play(x_sound_MI_2);
-pause (.5)
-play(x_sound_RE);
-pause (.5)
-play(x_sound_RE_2);
-pause (.5)
-play(x_sound_DO);
-pause (3)
+% plot(abs(FRE)),xlim([0 4000]);
+% title('fft Re');
+% xlabel('Frecuencia') 
+% ylabel('|H(w)|')
+% figure
+% 
+% plot(abs(FFA)),xlim([0 4000]);
+% title('fft Fa');
+% xlabel('Frecuencia') 
+% ylabel('|H(w)|')
+% figure
+% 
+% plot(abs(FSI)),xlim([0 4000]);
+% title('fft Si');
+% xlabel('Frecuencia') 
+% ylabel('|H(w)|')
+% figure
+% 
+% 
+% play(x_sound_DO);
+% pause (.5)
+% play(x_sound_DO_2);
+% pause (.5)
+% play(x_sound_SOL);
+% pause (.5)
+% play(x_sound_SOL_2);
+% pause (.5)
+% play(x_sound_LA);
+% pause (.5)
+% play(x_sound_LA_2);
+% pause (.5)
+% play(x_sound_SOL_3);
+% pause (2.5)
+% play(x_sound_FA);
+% pause (.5)
+% play(x_sound_FA_2);
+% pause (.5)
+% play(x_sound_MI);
+% pause (.5)
+% play(x_sound_MI_2);
+% pause (.5)
+% play(x_sound_RE);
+% pause (.5)
+% play(x_sound_RE_2);
+% pause (.5)
+% play(x_sound_DO);
+% pause (3)
+% 
+% play(x_sound_SOL);
+% pause (.5)
+% play(x_sound_SOL_2);
+% pause (.5)
+% play(x_sound_FA);
+% pause (.5)
+% play(x_sound_FA_2);
+% pause (.5)
+% play(x_sound_MI);
+% pause (.5)
+% play(x_sound_MI_2);
+% pause (.5)
+% play(x_sound_RE);
+% pause (2.5)
+% play(x_sound_SOL);
+% pause (.5)
+% play(x_sound_SOL_2);
+% pause (.5)
+% play(x_sound_FA);
+% pause (.5)
+% play(x_sound_FA_2);
+% pause (.5)
+% play(x_sound_MI);
+% pause (.5)
+% play(x_sound_MI_2);
+% pause (.5)
+% play(x_sound_RE);
+% pause (3)
+% 
+% play(x_sound_DO);
+% pause (.5)
+% play(x_sound_DO_2);
+% pause (.5)
+% play(x_sound_SOL);
+% pause (.5)
+% play(x_sound_SOL_2);
+% pause (.5)
+% play(x_sound_LA);
+% pause (.5)
+% play(x_sound_LA_2);
+% pause (.5)
+% play(x_sound_SOL_3);
+% pause (2.5)
+% play(x_sound_FA);
+% pause (.5)
+% play(x_sound_FA_2);
+% pause (.5)
+% play(x_sound_MI);
+% pause (.5)
+% play(x_sound_MI_2);
+% pause (.5)
+% play(x_sound_RE);
+% pause (.5)
+% play(x_sound_RE_2);
+% pause (.5)
+% play(x_sound_DO);
+% pause (3)
